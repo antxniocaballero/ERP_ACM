@@ -54,7 +54,7 @@ class RecordDialog(QDialog):
         self.stock_input.setMaximum(1000)
 
         self.image_path = ""
-        self.btn_image = QPushButton("📸 Seleccionar Portada...")
+        self.btn_image = QPushButton("Seleccionar Portada...")
         self.btn_image.clicked.connect(self.select_image)
         self.lbl_image_path = QLabel("Ninguna imagen seleccionada")
         self.lbl_image_path.setStyleSheet("color: #d7ccc8; font-size: 11px;")
@@ -115,10 +115,10 @@ class InventoryWidget(QWidget):
         layout = QVBoxLayout(self)
 
         top_layout = QHBoxLayout()
-        self.btn_add = QPushButton("➕ Añadir")
-        self.btn_edit = QPushButton("✏️ Modificar")
-        self.btn_delete = QPushButton("🗑️ Eliminar")
-        self.btn_refresh = QPushButton("🔄 Recargar")
+        self.btn_add = QPushButton("Añadir Disco")
+        self.btn_edit = QPushButton("Modificar")
+        self.btn_delete = QPushButton("Eliminar")
+        self.btn_refresh = QPushButton("Recargar")
 
         self.btn_add.clicked.connect(self.open_add_dialog)
         self.btn_edit.clicked.connect(self.edit_selected)
